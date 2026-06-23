@@ -30,6 +30,124 @@
         <link href="css/style.css" rel="stylesheet">
 
         <style>
+
+            /* ===== OUR NEWS SECTION ===== */
+.news-card {
+    border: 1px solid #e5e5e5;
+    background: #fff;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.news-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.news-content {
+    padding: 20px;
+}
+
+.news-date {
+    color: #999;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.news-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.news-excerpt {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.7;
+}
+
+.news-sidebar {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 5px;
+}
+
+.news-sidebar h5 {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.news-sidebar ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.news-sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.news-sidebar ul li a {
+    color: #555;
+    text-decoration: none;
+}
+
+.news-sidebar ul li a:hover {
+    color: #0d6efd;
+    
+}
+
+
+/* ===== OUR NEWS ===== */
+
+.news-card {
+    background: #fff;
+    border: 1px solid #e9ecef;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.news-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.news-content {
+    padding: 20px;
+}
+
+.news-date {
+    font-size: 13px;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.news-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.news-excerpt {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
             .blog-item .project-img img {
                 height: 160px !important;
                 object-fit: cover !important;
@@ -89,6 +207,167 @@
                 font-weight: 600;
                 border-radius: 5px;
             }
+
+            /* ==========================
+   MODERN NEWS SECTION
+========================== */
+
+.news-section {
+    background: linear-gradient(180deg, #f8fbff 0%, #ffffff 100%);
+}
+
+.featured-news {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+.featured-news img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+.featured-content {
+    padding: 50px;
+}
+
+
+
+.news-card {
+    background: #fff;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    height: 100%;
+    transition: all .35s ease;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+.news-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 45px rgba(0,0,0,0.12);
+}
+
+.news-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.news-content {
+    padding: 24px;
+}
+
+.news-date {
+    display: inline-block;
+    background: #eef4ff;
+    color: #0d6efd;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 30px;
+    margin-bottom: 15px;
+}
+
+.news-title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.news-excerpt {
+    color: #6c757d;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.news-link {
+    color: #0d6efd;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.news-link:hover {
+    letter-spacing: 0.5px;
+}
+
+.news-sidebar {
+    background: #fff;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    position: sticky;
+    top: 100px;
+}
+
+.sidebar-title {
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #0d3b7a;
+}
+
+.archive-year {
+    margin-bottom: 25px;
+}
+
+.archive-year h6 {
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.archive-year ul {
+    list-style: none;
+    padding: 0;
+}
+
+.archive-year li {
+    margin-bottom: 10px;
+}
+
+.archive-year a {
+    display: flex;
+    justify-content: space-between;
+    color: #555;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.archive-year a:hover {
+    color: #0d6efd;
+    padding-left: 5px;
+}
+
+.news-section {
+    position: relative;
+    background: url('assets/img/tower-bg.png') center center/cover no-repeat;
+    padding: 100px 0;
+}
+
+.news-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+
+    background: rgba(10, 25, 47, 0.5);
+}
+
+.news-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Make section title white */
+.news-section h1,
+.news-section .display-5 {
+    color: #fff;
+}
+
+.news-section > .container > .text-center p {
+    color: rgba(255,255,255,0.85) !important;
+}
         </style>
     </head>
 
@@ -176,55 +455,231 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 
-        <!-- ================= MEDIA EXPOSURE CARDS SECTION START ================= -->
-        <div class="container-fluid py-5 bg-light">
-            <div class="container py-5">
-                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
-                    <h1 class="display-5 mb-4">Latest Insights & Corporate Coverage</h1>
-                    <p class="text-muted">Stay informed with AbleAce Raakin's media presence. Explore corporate announcements, updates on Shariah-compliant digital innovations, and key industry viewpoints.</p>
-                </div>
-                <div class="row g-4 justify-content-center">
-                    
-                    <!-- Card 1: Articles and News -->
-                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="card media-card">
-                            <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=600&q=80" alt="Latest Articles and News" class="card-img-top">
-                            <div class="media-card-body">
-                                <h4 class="media-card-title">Latest Articles & News</h4>
-                                <p class="media-card-text">Read featured press entries, company operational benchmarks, and local or global write-ups concerning AbleAce Raakin’s business advancements.</p>
-                                <a href="latest-news.html" class="btn btn-primary btn-readmore">Read Articles <i class="fas fa-arrow-right ms-2"></i></a>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!-- Card 2: Shariah & Industry Insights -->
-                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="card media-card">
-                            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=600&q=80" alt="Shariah & Industry Insights" class="card-img-top">
-                            <div class="media-card-body">
-                                <h4 class="media-card-title">Shariah & Market Insights</h4>
-                                <p class="media-card-text">Explore detailed analytical points about Islamic finance development, sustainable commodity tech solutions, and strategic updates on ARIIMS.</p>
-                                <a href="shariah-insights.html" class="btn btn-primary btn-readmore">Read Insights <i class="fas fa-arrow-right ms-2"></i></a>
-                            </div>
-                        </div>
-                    </div>
+        
+<!-- Our News Start -->
+<div class="container-fluid py-5 news-section">
+    <div class="container py-5">
 
-                    <!-- Card 3: Press Releases & Events -->
-                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="card media-card">
-                            <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=600&q=80" alt="Press Releases and Events" class="card-img-top">
-                            <div class="media-card-body">
-                                <h4 class="media-card-title">Press Releases & Events</h4>
-                                <p class="media-card-text">Access our official media kit items, regulatory statements, corporate declarations, and key highlights from past or upcoming conferences.</p>
-                                <a href="press-releases.html" class="btn btn-primary btn-readmore">View Releases <i class="fas fa-arrow-right ms-2"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
+        <!-- Title -->
+        <div class="text-center mx-auto mb-5" style="max-width:800px;">
+            <h1 class="display-5 fw-bold mb-3">Latest News & Updates</h1>
+            <p class="text-muted">
+                Stay updated with our latest announcements, partnerships,
+                achievements and corporate developments.
+            </p>
         </div>
-        <!-- ================= MEDIA EXPOSURE CARDS SECTION END ================= -->
+
+        <!-- FEATURED NEWS -->
+        <div class="featured-news mb-5">
+
+            <div class="row g-0 align-items-center">
+
+                <div class="col-lg-6">
+                    <img src="img/carousel-2.jpg" alt="">
+                </div>
+
+                <div class="col-lg-6">
+
+                    <div class="featured-content">
+
+                       
+
+                        <div class="news-date">
+                        </div>
+
+                        <h2 class="fw-bold mb-4">
+ This section shows our latest news, media features, and company updates.               </h2>
+
+                        <p class="text-muted mb-4">
+                            Stay updated with the latest developments, strategic initiatives,
+                    and media coverage surrounding AbleAce Raakin. We continuously
+                    expand our presence across global markets and industry sectors.
+                        </p>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row g-5">
+
+            <!-- NEWS GRID -->
+            <div class="col-lg-9">
+
+                <div class="row g-4">
+
+                    <!-- Card 1 -->
+                    <div class="col-md-6">
+                        <div class="news-card">
+
+                            <img src="img/news1.png">
+
+                            <div class="news-content">
+
+                                <div class="news-date">
+                                    15 July 2025
+                                </div>
+
+                                <h5 class="news-title">
+                                    Strategic Partnership Announcement
+                                </h5>
+
+                                <p class="news-excerpt">
+                                    New collaboration supports innovation
+                                    in Shariah-compliant digital commodity
+                                    trading solutions.
+                                </p>
+
+                                <a href="news-partnership.html" class="news-link">
+                                    Read More →
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col-md-6">
+                        <div class="news-card">
+
+                            <img src="img/kl.view.png">
+
+                            <div class="news-content">
+
+                                <div class="news-date">
+                                    20 September 2024
+                                </div>
+
+                                <h5 class="news-title">
+                                    Industry Recognition Award
+                                </h5>
+
+                                <p class="news-excerpt">
+                                    Recognition received for contribution
+                                    towards ethical commodity trading
+                                    solutions.
+                                </p>
+
+                                <a href="news-industry.html" class="news-link">
+                                    Read More →
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-md-6">
+                        <div class="news-card">
+
+                            <img src="img/carousel-1.jpg">
+
+                            <div class="news-content">
+
+                                <div class="news-date">
+                                    03 March 2024
+                                </div>
+
+                                <h5 class="news-title">
+                                    Technology Enhancement Initiative
+                                </h5>
+
+                                <p class="news-excerpt">
+                                    Continuous investment in digital
+                                    infrastructure to support future growth.
+                                </p>
+
+                                <a href="news-tech.html" class="news-link">
+                                    Read More →
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="col-md-6">
+                        <div class="news-card">
+
+                            <img src="img/gv-1.webp">
+
+                            <div class="news-content">
+
+                                <div class="news-date">
+                                    15 January 2024
+                                </div>
+
+                                <h5 class="news-title">
+                                    Sustainability & Governance Update
+                                </h5>
+
+                                <p class="news-excerpt">
+                                    Reinforcing our commitment to ethical,
+                                    transparent and sustainable business
+                                    practices.
+                                </p>
+
+                                <a href="news-sustain.html" class="news-link">
+                                    Read More →
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- SIDEBAR -->
+            <div class="col-lg-3">
+
+                <div class="news-sidebar">
+
+                    <h4 class="sidebar-title">
+                        Archives
+                    </h4>
+
+                    <div class="archive-year">
+
+                        <h6>2025</h6>
+
+                        <ul>
+                            <li><a href="news-partnership.html">July <span>(1)</span></a></li>
+                        </ul>
+
+                    </div>
+
+                    <div class="archive-year">
+
+                        <h6>2024</h6>
+
+                        <ul>
+                            <li><a href="news-sustain.html">January <span>(1)</span></a></li>
+                            <li><a href="news-tech.html">March<span>(1)</span></a></li>
+                            <li><a href="news-industry.html">September <span>(1)</span></a></li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<!-- Our News End -->
 
         <!-- Footer Start -->
         <div class="container-fluid footer py-3 wow fadeIn" data-wow-delay="0.2s">
